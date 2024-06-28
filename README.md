@@ -42,8 +42,8 @@ For query Image: For clustering and Visual Explanation
 For example, run the following commands to perform our method on CIFAR20:
 ```shell
 python find_k_nearest_neighbours.py --config_env configs/env.yml --config_exp configs/pretext/simclr_cifar20.yml
-python Cluster_img.py --n 300 --query 500 --config_exp configs/scan/scan_cifar20.yml --model repository_eccv/cifar-20/scan/model.pth.tar
-python eval_charts.py --query 500 --config_exp configs/scan/scan_cifar20.yml --model repository_eccv/cifar-20/scan/model.pth.tar
+python Cluster_img.py --n 30 --query 500 --config_exp configs/scan/scan_cifar20.yml --model repository_eccv/cifar-20/scan/model.pth.tar
+python eval_charts.py --query 30 --config_exp configs/scan/scan_cifar20.yml --model repository_eccv/cifar-20/scan/model.pth.tar
 ```
 
 To apply LIME on the clustered dataset, add the --visualize_prototypes flag as follows:
