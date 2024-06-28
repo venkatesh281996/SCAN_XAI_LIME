@@ -35,6 +35,10 @@ STEP 1: Use K-nearest neighbors to find candidate images for each image with fin
 STEP 2: Cluster the candidate images using the model with Cluster_img.py.
 STEP 3: Display evaluation charts with eval_charts.py.
 
+For query Image: For clustering and Visual Explanation
+!python scan_lime_explainability.py --query_image_path /content/drive/MyDrive/ATiML-SCAN-Clustering-main/ATiML-SCAN-Clustering-main/TEST_files/original_image_30.png --save_path /content/drive/MyDrive/ATiML-SCAN-Clustering-main/ATiML-SCAN-Clustering-main/TEST_files/
+
+
 For example, run the following commands to perform our method on CIFAR20:
 ```shell
 python find_k_nearest_neighbours.py --config_env configs/env.yml --config_exp configs/pretext/simclr_cifar20.yml
